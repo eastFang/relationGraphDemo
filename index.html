@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>知识图谱demo</title>
+  <script src="https://cdn.bootcss.com/cytoscape/3.10.0/cytoscape.min.js"></script>
+  <script src="./js/elements.js"></script>
+  <script src="./js/style.js"></script>
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+  <div id="cy" style="width: 100vw; height: 100vh;"></div>
+  <div class="operation">
+    <button onclick="onScale(0.1)">放大</button>
+    <button onclick="onScale(-0.1)">缩小</button>
+    <button onclick="onExport()">导出</button>
+  </div>
+  <div class="dialog">你好你好</div>
+  <script>
+    const cy = cytoscape({
+      container: document.getElementById('cy'),
+      elements,
+
+      style,
+
+      layout: {
+        name: 'circle',
+        ready: function() {
+        }
+      }
+    })
+  </script>
+  <script src="./js/event.js"></script>
+</body>
+</html>

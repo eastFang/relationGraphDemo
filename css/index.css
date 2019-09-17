@@ -1,0 +1,22 @@
+#cy {
+  background-image: url('https://www.qichacha.com/material/theme/chacha/cms/v2/images/shuiying2.png');
+  background-size: 300px 228px;
+}
+.operation {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+}
+.operation button {
+  display: block;
+}
+.dialog {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+}
+.dialog.visible {
+  display: block;
+}
